@@ -6,7 +6,7 @@ FLAGS	=	-Wall -Wextra -Werror -std=c++98
 
 SRCS	=	main.cpp	Fixed.cpp
 
-OBJS	=	$(SRC:.cpp=.o)
+OBJS	=	$(SRCS:.cpp=.o)
 
 all: $(NAME)
 
@@ -14,7 +14,7 @@ $(NAME): $(OBJS)
 	$(CXX) $(FLAGS) $(OBJS) -o $(NAME)
 
 %.o: %.cpp
-	$(C++) $(FLAGS) -c $< -o $@
+	$(CXX) $(FLAGS) -c $< -o $@
 
 clean:
 	rm -f $(OBJS)

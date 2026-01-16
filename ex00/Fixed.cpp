@@ -6,7 +6,7 @@
 /*   By: jocalder <jocalder@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/16 11:42:08 by jocalder          #+#    #+#             */
-/*   Updated: 2026/01/16 12:06:40 by jocalder         ###   ########.fr       */
+/*   Updated: 2026/01/16 12:42:44 by jocalder         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,8 @@ Fixed::Fixed(const Fixed& other)
 
 Fixed& Fixed::operator=(const Fixed& other)
 {
-    std::cout << "Copy assigment operator called" << std::endl;
-    if (*this != &other)
+    std::cout << "Copy assignment operator called" << std::endl;
+    if (this != &other)
         this->value = other.value;
     return (*this);
 }

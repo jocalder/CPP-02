@@ -6,7 +6,7 @@
 /*   By: jocalder <jocalder@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/16 11:33:11 by jocalder          #+#    #+#             */
-/*   Updated: 2026/01/16 11:41:53 by jocalder         ###   ########.fr       */
+/*   Updated: 2026/01/16 12:36:04 by jocalder         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,3 +29,5 @@ class	Fixed
 		int		getRawBits(void) const;
 		void	setRawBits(int const raw);
 };
+
+#endif
