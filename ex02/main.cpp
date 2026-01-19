@@ -6,16 +6,16 @@
 /*   By: jocalder <jocalder@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/19 10:19:45 by jocalder          #+#    #+#             */
-/*   Updated: 2026/01/19 10:30:38 by jocalder         ###   ########.fr       */
+/*   Updated: 2026/01/19 17:44:23 by jocalder         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Fixed.hpp"
 
-int main( void )
+int main(void)
 {
 	Fixed 		a;
-	Fixed const b( Fixed( 5.05f ) * Fixed( 2 ) );
+	Fixed const b(Fixed(5.05f) * Fixed(2));
 	
 	std::cout << a << std::endl;
 	std::cout << ++a << std::endl;
@@ -26,5 +26,5 @@ int main( void )
 	std::cout << b << std::endl;
 	
 	std::cout << Fixed::max(a, b) << std::endl;
-	return 0;
+	return (0);
 }

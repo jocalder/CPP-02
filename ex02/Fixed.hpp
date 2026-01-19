@@ -6,7 +6,7 @@
 /*   By: jocalder <jocalder@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/19 10:21:37 by jocalder          #+#    #+#             */
-/*   Updated: 2026/01/19 10:44:19 by jocalder         ###   ########.fr       */
+/*   Updated: 2026/01/19 17:46:51 by jocalder         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ class	Fixed
 {
 	private:
 		int					value;
-		static const int	fractionalBits = 0;
+		static const int	fractionalBits = 8;
 	public:
 		Fixed();
 		Fixed(const Fixed& other);
