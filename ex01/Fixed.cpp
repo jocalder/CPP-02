@@ -6,7 +6,7 @@
 /*   By: jocalder <jocalder@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/16 12:58:10 by jocalder          #+#    #+#             */
-/*   Updated: 2026/01/16 13:50:32 by jocalder         ###   ########.fr       */
+/*   Updated: 2026/01/19 10:11:38 by jocalder         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,7 @@ Fixed::Fixed(const float floating)
 
 float	Fixed::toFloat(void) const
 {
-	return (this->value / (1 << fractionalBits));
+	return (this->value / (float)(1 << fractionalBits));
 }
 
 int	Fixed::toInt(void) const
